@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reign International Academy & Happy Feet Montessori Preschool</title>
+  <meta name="description" content="A Cambridge International Primary School and Montessori Preschool based in Chileka, Blantyre, Malawi. Nurturing young minds to reign in life." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════════ -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo-wrap">
+        <div class="logo-icon">R</div>
+        <div class="logo-text">
+          <span class="logo-name">Reign International Academy</span>
+          <span class="logo-sub">Happy Feet Montessori Preschool</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="programmes.html">Programmes</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admissions.html" class="btn btn-primary" style="padding:10px 20px;">Apply Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════════════
+       HERO CAROUSEL
+  ════════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="carousel" id="carousel">
+
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <div class="slide-bg" style="background-image: url('reign/1.jpg');"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <span class="slide-tag">🎓 Cambridge International School</span>
+          <h1 class="slide-title">Where Every Child is Born to Reign</h1>
+          <p class="slide-desc">A Cambridge International Primary School nurturing curious, confident, and compassionate learners in Blantyre, Malawi.</p>
+          <div class="slide-btns">
+            <a href="about.html" class="btn btn-primary">Discover Our School</a>
+            <a href="contact.html" class="btn btn-secondary">Book a Visit</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <div class="slide-bg" style="background-image: url('reign/ca1.jpg');"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <span class="slide-tag">🐾 Happy Feet Montessori Preschool</span>
+          <h1 class="slide-title">Little Feet, Big Discoveries</h1>
+          <p class="slide-desc">Our Montessori preschool sparks a lifelong love of learning through hands-on exploration and play-based education.</p>
+          <div class="slide-btns">
+            <a href="programmes.html" class="btn btn-primary">Our Programmes</a>
+            <a href="admissions.html" class="btn btn-secondary">Enrol Today</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <div class="slide-bg" style="background-image: url('reign/ca1.jpg');"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <span class="slide-tag">🇲🇼 Proudly Based in Chileka, Blantyre</span>
+          <h1 class="slide-title">Excellence Rooted in Malawi</h1>
+          <p class="slide-desc">Celebrating Malawian culture while delivering world-class Cambridge curriculum education for the next generation of leaders.</p>
+          <div class="slide-btns">
+            <a href="about.html" class="btn btn-primary">Our Story</a>
+            <a href="gallery.html" class="btn btn-secondary">View Gallery</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide">
+        <div class="slide-bg" style="background-image: url('reign/2.jpg');"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <span class="slide-tag">✏️ Learning Through Play & Purpose</span>
+          <h1 class="slide-title">Nurturing Minds, Shaping Futures</h1>
+          <p class="slide-desc">Our holistic approach combines academic rigour with creative exploration, ensuring every child thrives in a warm, safe environment.</p>
+          <div class="slide-btns">
+            <a href="programmes.html" class="btn btn-primary">Explore Programmes</a>
+            <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="carousel-dots" id="dots"></div>
+      <button class="carousel-arrow prev" id="prevArrow">&#8592;</button>
+      <button class="carousel-arrow next" id="nextArrow">&#8594;</button>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       STATS BAND
+  ════════════════════════════════════════════ -->
+  <section class="stats-band">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-num">500+</span>
+          <span class="stat-label">Happy Students</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">30+</span>
+          <span class="stat-label">Qualified Teachers</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">Cambridge</span>
+          <span class="stat-label">International Curriculum</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">Montessori</span>
+          <span class="stat-label">Certified Preschool</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       WELCOME / ABOUT
+  ════════════════════════════════════════════ -->
+  <section class="section-pad" style="background: var(--white);">
+    <div class="container">
+      <div class="welcome-grid">
+        <div class="welcome-img-wrap">
+          <img
+            class="welcome-img-main"
+            src="reign/preschool.jpg"
+            alt="Students learning at Reign International Academy"
+            loading="lazy"
+          />
+          <div class="welcome-badge">
+            <span class="num">🏆</span>
+            <span class="lbl">Award-Winning School</span>
+          </div>
+        </div>
+        <div>
+          <p class="section-label">Welcome to Our School</p>
+          <h2 class="section-title">Raising Leaders, <span>One Child at a Time</span></h2>
+          <p class="section-sub">We are a Cambridge International Primary School and a Montessori Preschool, based in Chileka, Blantyre. We believe every child is born to reign — to lead, create, and make a difference.</p>
+          <ul class="welcome-check-list">
+            <li class="check-item">
+              <span class="check-icon">✓</span>
+              Cambridge International curriculum from Early Years through Primary
+            </li>
+            <li class="check-item">
+              <span class="check-icon">✓</span>
+              Authentic Montessori approach in our Happy Feet Preschool
+            </li>
+            <li class="check-item">
+              <span class="check-icon">✓</span>
+              Celebrating Malawian culture and heritage in every lesson
+            </li>
+            <li class="check-item">
+              <span class="check-icon">✓</span>
+              Safe, nurturing, and stimulating learning environment
+            </li>
+            <li class="check-item">
+              <span class="check-icon">✓</span>
+              Dedicated, qualified teachers committed to every child's growth
+            </li>
+          </ul>
+          <a href="about.html" class="btn btn-blue">Learn More About Us ›</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       PROGRAMMES
+  ════════════════════════════════════════════ -->
+  <section class="section-pad programmes" id="programmes">
+    <div class="container">
+      <p class="section-label">What We Offer</p>
+      <h2 class="section-title">Our <span>Learning Programmes</span></h2>
+      <p class="section-sub">From tiny tots taking their first steps to confident primary learners, we have a programme designed for every stage of childhood.</p>
+
+      <div class="prog-grid">
+
+        <div class="prog-card">
+          <img
+            class="prog-img"
+            src="reign/preschool.jpg"
+            alt="Happy Feet Montessori Preschool"
+            loading="lazy"
+          />
+          <div class="prog-body">
+            <div class="prog-icon gold">🐾</div>
+            <div class="prog-title">Happy Feet Montessori Preschool</div>
+            <p class="prog-desc">Our Montessori environment fosters independence, creativity, and a deep love for learning through child-led discovery and hands-on materials.</p>
+            <span class="prog-ages">Ages 2 – 5 Years</span>
+          </div>
+        </div>
+
+        <div class="prog-card">
+          <img
+            class="prog-img"
+            src="reign/ca1.jpg"
+            alt="Cambridge Primary School"
+            loading="lazy"
+          />
+          <div class="prog-body">
+            <div class="prog-icon blue">📚</div>
+            <div class="prog-title">Cambridge Primary School</div>
+            <p class="prog-desc">A rigorous Cambridge International curriculum preparing students in English, Mathematics, and Science for academic excellence and global citizenship.</p>
+            <span class="prog-ages">Ages 5 – 11 Years</span>
+          </div>
+        </div>
+
+        <div class="prog-card">
+          <img
+            class="prog-img"
+            src="reign/arts5.jpg"
+            alt="Reception Class"
+            loading="lazy"
+          />
+          <div class="prog-body">
+            <div class="prog-icon green">🌱</div>
+            <div class="prog-title">Reception & Early Years</div>
+            <p class="prog-desc">A seamless bridge between preschool and primary, building foundational literacy, numeracy, and social-emotional skills in a warm classroom setting.</p>
+            <span class="prog-ages">Ages 4 – 6 Years</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center; margin-top:36px;">
+        <a href="programmes.html" class="btn btn-blue">View All Programmes ›</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       WHY CHOOSE US
+  ════════════════════════════════════════════ -->
+  <section class="section-pad why">
+    <div class="container">
+      <p class="section-label">Why Choose Us</p>
+      <h2 class="section-title">A School Where <span>Children Truly Flourish</span></h2>
+      <p class="section-sub">We combine the best of Cambridge International standards with the warmth of Montessori philosophy to give every child an extraordinary start.</p>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-num">01</div>
+          <div class="why-icon">🌍</div>
+          <div class="why-title">World-Class Curriculum</div>
+          <p class="why-text">Cambridge International Primary curriculum recognised globally, giving your child a head-start in any educational journey.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">02</div>
+          <div class="why-icon">🎨</div>
+          <div class="why-title">Creative & Holistic Learning</div>
+          <p class="why-text">Art, music, drama, and physical education are woven into daily learning, nurturing well-rounded individuals with rich imaginations.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">03</div>
+          <div class="why-icon"><img src="images/malawi-flag.svg" alt="Malawi flag" /></div>
+          <div class="why-title">Celebrating Malawian Heritage</div>
+          <p class="why-text">We proudly integrate Malawian culture, history, and language into our curriculum, grounding students in their identity and roots.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">04</div>
+          <div class="why-icon">👩‍🏫</div>
+          <div class="why-title">Expert, Caring Teachers</div>
+          <p class="why-text">Our qualified educators bring passion and expertise to every classroom, building strong, trusting relationships with every learner.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">05</div>
+          <div class="why-icon">🔐</div>
+          <div class="why-title">Safe & Nurturing Environment</div>
+          <p class="why-text">Child safety is our highest priority. Our secure, cheerful campus ensures peace of mind for parents and comfort for children.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">06</div>
+          <div class="why-icon">🤝</div>
+          <div class="why-title">Strong Parent Partnership</div>
+          <p class="why-text">We believe education is a team effort. Regular communication and parent events keep families deeply connected to their child's journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       GALLERY
+  ════════════════════════════════════════════ -->
+  <section class="section-pad" id="gallery" style="background: var(--white);">
+    <div class="container">
+      <p class="section-label">School Life</p>
+      <h2 class="section-title">A Peek Into Our <span>Vibrant Community</span></h2>
+      <p class="section-sub">Joyful moments, cultural celebrations, and everyday brilliance from our classrooms and beyond.</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item tall">
+          <img src="reign/preschool.jpg" alt="Children learning together" loading="lazy" />
+          <div class="gallery-overlay">Collaborative Learning</div>
+        </div>
+        <div class="gallery-item">
+          <img src="reign/art2.jpg" alt="Art class" loading="lazy" />
+          <div class="gallery-overlay">Creative Arts</div>
+        </div>
+        <div class="gallery-item">
+          <img src="reign/science1.jpg" alt="Science experiment" loading="lazy" />
+          <div class="gallery-overlay">Science Exploration</div>
+        </div>
+        <div class="gallery-item wide">
+          <img src="reign/classreading.jpg" alt="Class reading" loading="lazy" />
+          <div class="gallery-overlay">Reading & Literacy</div>
+        </div>
+        <div class="gallery-item">
+          <img src="reign/outdoor2.jpg" alt="Outdoor play" loading="lazy" />
+          <div class="gallery-overlay">Outdoor Play</div>
+        </div>
+        <div class="gallery-item">
+          <img src="reign/montessori.jpg" alt="Montessori activities" loading="lazy" />
+          <div class="gallery-overlay">Montessori Activities</div>
+        </div>
+        <div class="gallery-item">
+          <img src="reign/outdoor.jpg" alt="Cultural celebrations" loading="lazy" />
+          <div class="gallery-overlay">Cultural Celebrations</div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:36px;">
+        <a href="gallery.html" class="btn btn-blue">View Full Gallery ›</a>
+      </div>
+    </div>
+  </section>
+   
+  <section class="section-pad testimonials">
+    <div class="container">
+      <p class="section-label">Parent Voices</p>
+      <h2 class="section-title">What Our <span>Families Say</span></h2>
+      <p class="section-sub">Don't take our word for it — hear from the parents and guardians who trust us with their most precious ones.</p>
+
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Enrolling my daughter in Happy Feet was the best decision we made. She went from shy to confidently reading and leading her class within one term. The teachers truly care about every child."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">TM</div>
+            <div>
+              <div class="testi-name">Thandiwe Mwale</div>
+              <div class="testi-role">Parent, Preschool Class</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"The Cambridge curriculum here is exceptional. My son is performing above his grade level and has developed a genuine passion for learning. The school's warmth and structure make all the difference."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">CK</div>
+            <div>
+              <div class="testi-name">Chikondi Kamanga</div>
+              <div class="testi-role">Parent, Grade 3</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"I love how they celebrated Malawi's Independence Day with the children! My little one came home singing and telling us all about our history. Education AND culture — that is what sets Reign apart."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">NP</div>
+            <div>
+              <div class="testi-name">Ntombi Phiri</div>
+              <div class="testi-role">Parent, Reception Class</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       NEWS & EVENTS
+  ════════════════════════════════════════════ -->
+  <section class="section-pad news" id="news">
+    <div class="container">
+      <p class="section-label">Latest News</p>
+      <h2 class="section-title">School <span>News & Events</span></h2>
+      <p class="section-sub">Stay up to date with the latest happenings, achievements, and upcoming events at our school.</p>
+
+      <div class="news-grid">
+        <div class="news-card">
+          <img class="news-img" src="reign/kamuzu day.jpg" alt="Kamuzu Day celebration" loading="lazy" />
+          <div class="news-body">
+            <div class="news-date"><span class="tag tag-gold">Event</span> &nbsp; July 6, 2025</div>
+            <h3 class="news-title">Happy Feet Celebrates Malawi's Kamuzu Day</h3>
+            <p class="news-excerpt">Our preschool buzzed with excitement as children dressed in beautiful traditional wear and the Reception class delivered an amazing assembly.</p>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <img class="news-img" src="reign/admission.jpg" alt="New term enrolment" loading="lazy" />
+          <div class="news-body">
+            <div class="news-date"><span class="tag tag-blue">Admissions</span> &nbsp; January 2026</div>
+            <h3 class="news-title">2026 Enrolment Now Open for All Classes</h3>
+            <p class="news-excerpt">We are thrilled to open our doors for the new academic year. Limited spaces available in Preschool, Reception, and Primary classes.</p>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <img class="news-img" src="reign/annualArt.jpg" alt="Art show" loading="lazy" />
+          <div class="news-body">
+            <div class="news-date"><span class="tag tag-green">Achievement</span> &nbsp; May 2025</div>
+            <h3 class="news-title">Annual Art Showcase Wows Families and Guests</h3>
+            <p class="news-excerpt">Students from all year groups displayed extraordinary creativity at our annual art and culture showcase — a celebration of imagination and talent.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       CTA BAND
+  ════════════════════════════════════════════ -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>Ready to Join the Reign Family?</h2>
+      <p>Give your child the Cambridge and Montessori advantage. Enrolment is now open.</p>
+      <div class="cta-btns">
+        <a href="admissions.html" class="btn btn-blue">📋 Apply for Admission</a>
+        <a href="contact.html" class="btn" style="background:transparent; border:2px solid var(--dark); color:var(--dark);">🏫 Book a School Tour</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-about">
+          <a href="index.html" class="logo-wrap" style="margin-bottom:16px; display:flex;">
+            <div class="logo-icon">R</div>
+            <div class="logo-text">
+              <span class="logo-name">Reign International Academy</span>
+              <span class="logo-sub">Happy Feet Montessori Preschool</span>
+            </div>
+          </a>
+          <p>A Cambridge International Primary School and Montessori Preschool based in Chileka, Blantyre, Malawi. Every child is born to reign.</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/p/Reign-International-Academy-and-Happy-Feet-Montessori-Preschool-100076563277076/" target="_blank" class="social-btn" title="Facebook">f</a>
+            <a href="#" class="social-btn" title="WhatsApp">💬</a>
+            <a href="#" class="social-btn" title="Instagram">📷</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programmes.html">Programmes</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cms.html">Admin Login</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Programmes</h4>
+          <ul class="footer-links">
+            <li><a href="programmes.html#montessori">Happy Feet Montessori (Ages 2–5)</a></li>
+            <li><a href="programmes.html#reception">Reception Class (Ages 4–6)</a></li>
+            <li><a href="programmes.html#primary">Cambridge Primary (Ages 5–11)</a></li>
+            <li><a href="contact.html">Admissions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">📍</div>
+            <span>Chileka Road, Blantyre, Malawi</span>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">📞</div>
+            <span>+265 (0) XXX XXX XXX</span>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">✉️</div>
+            <span>info@reignacademy.mw</span>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">🕐</div>
+            <span>Mon – Fri: 7:00am – 4:30pm</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2025 Reign International Academy & Happy Feet Montessori Preschool. All rights reserved.</span>
+        <span>Chileka, Blantyre, Malawi 🇲🇼</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════════════════════════
+       SCRIPTS
+  ════════════════════════════════════════════ -->
+  <script>
+    // ── Hamburger Menu ──
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+    // ── Carousel ──
+    const slides   = document.querySelectorAll('.slide');
+    const dotsWrap = document.getElementById('dots');
+    let current = 0, timer;
+
+    // Build dots
+    slides.forEach((_, i) => {
+      const d = document.createElement('button');
+      d.classList.add('dot');
+      if (i === 0) d.classList.add('active');
+      d.addEventListener('click', () => goTo(i));
+      dotsWrap.appendChild(d);
+    });
+
+    function goTo(n) {
+      slides[current].classList.remove('active');
+      dotsWrap.children[current].classList.remove('active');
+      current = (n + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dotsWrap.children[current].classList.add('active');
+      resetTimer();
+    }
+
+    function resetTimer() {
+      clearInterval(timer);
+      timer = setInterval(() => goTo(current + 1), 5500);
+    }
+
+    document.getElementById('prevArrow').addEventListener('click', () => goTo(current - 1));
+    document.getElementById('nextArrow').addEventListener('click', () => goTo(current + 1));
+
+    resetTimer();
+  </script>
+
+</body>
+</html>

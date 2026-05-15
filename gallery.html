@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Reign International Academy & Happy Feet Montessori Preschool</title>
+  <meta name="description" content="Browse photos of school life, events, cultural celebrations, and classroom moments at Reign International Academy in Blantyre, Malawi." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo-wrap">
+        <div class="logo-icon">R</div>
+        <div class="logo-text">
+          <span class="logo-name">Reign International Academy</span>
+          <span class="logo-sub">Happy Feet Montessori Preschool</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="programmes.html">Programmes</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admissions.html" class="btn btn-primary" style="padding:10px 20px;">Apply Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-breadcrumb">
+        <a href="index.html">Home</a> &nbsp;/&nbsp; Gallery
+      </div>
+      <h1 class="page-hero-title">School Life Gallery</h1>
+      <p class="page-hero-sub">A window into the joyful, vibrant world of our students — from everyday classroom moments to grand celebrations.</p>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section class="section-pad" style="background: var(--white);">
+    <div class="container">
+
+      <!-- Filter Bar -->
+      <div class="gallery-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn" data-filter="classroom">🏫 Classroom</button>
+        <button class="filter-btn" data-filter="events">🎉 Events & Culture</button>
+        <button class="filter-btn" data-filter="outdoor">🌳 Outdoor & Sports</button>
+        <button class="filter-btn" data-filter="arts">🎨 Arts & Creativity</button>
+        <button class="filter-btn" data-filter="montessori">🐾 Happy Feet</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-full-grid" id="galleryGrid">
+
+        <div class="gallery-full-item" data-cat="classroom" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80" alt="Reading Class" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <div class="gallery-full-caption">Shared Reading Time</div>
+            <div class="gallery-full-album">Classroom · Cambridge Primary</div>
+          </div>
+        </div>
+
+        <div class="gallery-full-item" data-cat="events" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=600&q=80" alt="Cultural Celebrations" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <div class="gallery-full-caption">Independence Day Celebration</div>
+            <div class="gallery-full-album">Events & Culture</div>
+          </div>
+        </div>
+
+        <div class="gallery-full-item" data-cat="montessori" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=600&q=80" alt="Montessori Activities" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <div class="gallery-full-caption">Sensorial Exploration</div>
+            <div class="gallery-full-album">Happy Feet Montessori</div>
+          </div>
+        </div>
+
+        <div class="gallery-full-item" data-cat="classroom" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1571210862729-78a52d3779a2?w=600&q=80" alt="Group Learning" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <div class="gallery-full-caption">Collaborative Problem Solving</div>
+            <div class="gallery-full-album">Classroom · Year 4</div>
+          </div>
+        </div>
+
+        <div class="gallery-full-item" data-cat="arts" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=600&q=80" alt="Art Class" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <div class="gallery-full-caption">Annual Art Showcase</div>
+            <div class="gallery-full-album">Arts & Creativity</div>
+          </div>
+        </div>
+
+        <div class="gallery-full-item" data-cat="classroom" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=80" alt="Science Experiment" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <div class="gallery-full-caption">Science Experiment Day</div>
+            <div class="gallery-full-album">Classroom · Year 3</div>
+          </div>
+        </div>
+
+        <div class="gallery-full-item" data-cat="outdoor" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80" alt="Outdoor Play" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <div class="gallery-full-caption">Break Time Fun</div>
+            <div class="gallery-full-album">Outdoor & Sports</div>
+          </div>
+        </div>
+
+        <div class="gallery-full-item" data-cat="arts" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1497375638960-ca368c7231e4?w=600&q=80" alt="Performance" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <div class="gallery-full-caption">End-of-Term Performance</div>
+            <div class="gallery-full-album">Arts & Creativity</div>
+          </div>
+        </div>
+
+        <div class="gallery-full-item" data-cat="montessori" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1567057419565-4349c49d8a04?w=600&q=80" alt="Preschool Play" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <div class="gallery-full-caption">Building & Stacking</div>
+            <div class="gallery-full-album">Happy Feet Montessori</div>
+          </div>
+        </div>
+
+        <div class="gallery-full-item" data-cat="outdoor" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=600&q=80" alt="Sports Day" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <div class="gallery-full-caption">Annual Sports Day</div>
+            <div class="gallery-full-album">Outdoor & Sports</div>
+          </div>
+        </div>
+
+        <div class="gallery-full-item" data-cat="events" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1560785496-3c9d27877182?w=600&q=80" alt="School Assembly" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <div class="gallery-full-caption">Morning Assembly</div>
+            <div class="gallery-full-album">Events & Culture</div>
+          </div>
+        </div>
+
+        <div class="gallery-full-item" data-cat="classroom" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=80" alt="Teacher with students" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <div class="gallery-full-caption">One-on-One Guidance</div>
+            <div class="gallery-full-album">Classroom · Reception</div>
+          </div>
+        </div>
+
+        <div class="gallery-full-item" data-cat="arts" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?w=600&q=80" alt="Drawing class" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <div class="gallery-full-caption">Creative Drawing Session</div>
+            <div class="gallery-full-album">Arts & Creativity</div>
+          </div>
+        </div>
+
+        <div class="gallery-full-item" data-cat="montessori" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Practical Life" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <div class="gallery-full-caption">Practical Life Activities</div>
+            <div class="gallery-full-album">Happy Feet Montessori</div>
+          </div>
+        </div>
+
+        <div class="gallery-full-item" data-cat="outdoor" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=600&q=80" alt="Nature walk" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <div class="gallery-full-caption">Nature & Garden Club</div>
+            <div class="gallery-full-album">Outdoor & Sports</div>
+          </div>
+        </div>
+
+        <div class="gallery-full-item" data-cat="events" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80" alt="Graduation" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <div class="gallery-full-caption">Preschool Graduation Day</div>
+            <div class="gallery-full-album">Events & Culture</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- No results message -->
+      <div id="noResults" style="display:none; text-align:center; padding:60px 0; color:var(--text-light);">
+        <div style="font-size:3rem; margin-bottom:12px;">📸</div>
+        <p style="font-weight:700;">No photos in this category yet.</p>
+        <p style="font-size:0.88rem;">More coming soon!</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VIDEO SECTION -->
+  <section class="section-pad" style="background: var(--off-white);">
+    <div class="container">
+      <p class="section-label">School Videos</p>
+      <h2 class="section-title">See Our School <span>in Action</span></h2>
+      <p class="section-sub">Watch moments of joy, discovery, and learning from our vibrant school community.</p>
+
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:8px;">
+        <div style="background:var(--dark); border-radius:var(--radius); aspect-ratio:16/9; display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;cursor:pointer;overflow:hidden;position:relative;">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=70" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.4;" />
+          <div style="position:relative;z-index:1;text-align:center;">
+            <div style="width:56px;height:56px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin:0 auto 10px;">▶</div>
+            <p style="color:var(--white);font-weight:800;font-size:0.9rem;">School Tour 2025</p>
+          </div>
+        </div>
+        <div style="background:var(--dark); border-radius:var(--radius); aspect-ratio:16/9; display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;cursor:pointer;overflow:hidden;position:relative;">
+          <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=600&q=70" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.4;" />
+          <div style="position:relative;z-index:1;text-align:center;">
+            <div style="width:56px;height:56px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin:0 auto 10px;">▶</div>
+            <p style="color:var(--white);font-weight:800;font-size:0.9rem;">Independence Day Highlights</p>
+          </div>
+        </div>
+        <div style="background:var(--dark); border-radius:var(--radius); aspect-ratio:16/9; display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;cursor:pointer;overflow:hidden;position:relative;">
+          <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=600&q=70" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.4;" />
+          <div style="position:relative;z-index:1;text-align:center;">
+            <div style="width:56px;height:56px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin:0 auto 10px;">▶</div>
+            <p style="color:var(--white);font-weight:800;font-size:0.9rem;">Art Showcase 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>Want to See the School In Person?</h2>
+      <p>Book a guided tour and experience the Reign family for yourself.</p>
+      <div class="cta-btns">
+        <a href="contact.html" class="btn btn-blue">📅 Book a Visit</a>
+        <a href="admissions.html" class="btn" style="background:transparent;border:2px solid var(--dark);color:var(--dark);">📋 Apply Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo-wrap" style="margin-bottom:16px;display:flex;">
+            <div class="logo-icon">R</div>
+            <div class="logo-text">
+              <span class="logo-name">Reign International Academy</span>
+              <span class="logo-sub">Happy Feet Montessori Preschool</span>
+            </div>
+          </a>
+          <p>Cambridge International Primary School and Montessori Preschool, Chileka, Blantyre, Malawi.</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/p/Reign-International-Academy-and-Happy-Feet-Montessori-Preschool-100076563277076/" target="_blank" class="social-btn">f</a>
+            <a href="#" class="social-btn">💬</a>
+            <a href="#" class="social-btn">📷</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programmes.html">Programmes</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Gallery Albums</h4>
+          <ul class="footer-links">
+            <li><a href="gallery.html">All Photos</a></li>
+            <li><a href="gallery.html">Classroom Life</a></li>
+            <li><a href="gallery.html">Events & Culture</a></li>
+            <li><a href="gallery.html">Outdoor & Sports</a></li>
+            <li><a href="gallery.html">Arts & Creativity</a></li>
+            <li><a href="gallery.html">Happy Feet Montessori</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">📍</div>
+            <span>Chileka Road, Blantyre, Malawi</span>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">✉️</div>
+            <span>info@reignacademy.mw</span>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">🕐</div>
+            <span>Mon – Fri: 7:00am – 4:30pm</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Reign International Academy & Happy Feet Montessori Preschool. All rights reserved.</span>
+        <span>Chileka, Blantyre, Malawi 🇲🇼</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+    // Filter
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const items      = document.querySelectorAll('.gallery-full-item');
+    const noResults  = document.getElementById('noResults');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cat = btn.dataset.filter;
+        let visible = 0;
+        items.forEach(item => {
+          const match = cat === 'all' || item.dataset.cat === cat;
+          item.style.display = match ? 'block' : 'none';
+          if (match) visible++;
+        });
+        noResults.style.display = visible === 0 ? 'block' : 'none';
+      });
+    });
+
+    // Lightbox
+    function openLightbox(el) {
+      const img     = el.querySelector('img');
+      const caption = el.querySelector('.gallery-full-caption');
+      document.getElementById('lightboxImg').src = img.src;
+      document.getElementById('lightboxImg').alt = img.alt;
+      document.getElementById('lightboxCaption').textContent = caption ? caption.textContent : '';
+      document.getElementById('lightbox').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox(e) {
+      if (!e || e.target !== document.getElementById('lightboxImg')) {
+        document.getElementById('lightbox').classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+  </script>
+
+</body>
+</html>
